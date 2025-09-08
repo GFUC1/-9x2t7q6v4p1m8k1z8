@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="okay.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1 style="color: #992727;">PORTFOLIO</h1>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#hire">Hire me!</a></li>
+        </ul>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="details">
+            <h2>I'm Gil Febreane Ursos Cabab</h2>
+            <p>This is my portfolio website that shows all
+            <br>the details about my experience in web development
+            </p>
+            <a href="nofileduetoinsturctions" class="btn" download>DOWNLOAD CV</a>
+        </div>
+    </section>
+    
+    <section class="about" id="about">        
+        <div class="about-text">
+            <h2 style="color: #992727;">Gil Febreane U. Cabab - Web Developer Extraordinaire</h2>
+            <h3>Welcome to my Web Development Portfolio!</h3>
+            <p>I'm Gil Febreane U. Cabab, a passionate and results-driven web developer with a strong background in front-end and back-end technologies. Having navigated the ever-evolving landscape of web development for over 5 years, I bring a unique blend of technical expertise and creative problem-solving.</p>
+
+            <h3>What Sets Me Apart</h3>
+            <p>At the heart of my work is a commitment to delivering innovative solutions and user-centric designs. I thrive on turning ideas into reality, and my dedication to creating seamless digital experiences showcases my ability to exceed expectations.</p>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="service-text">
+            <h2>My Services</h2>
+            <p>I provide a wide range of web development solutions tailored to meet your business needs. From designing user-friendly interfaces to building secure back-end systems, I ensure that every project is executed with precision and creativity.</p>
+            <ul>
+                <li>⚡ Front-End Development: Responsive, modern websites using HTML, CSS, and JavaScript.</li>
+                <li>⚡ Back-End Development: Robust APIs and databases with Node.js and Express.</li>
+                <li>⚡ Full-Stack Projects: Complete solutions from concept to deployment.</li>
+                <li>⚡ UI/UX Design: Intuitive and engaging user experiences.</li>
+            </ul>
+        </div>
+    </section>
+
+<section class="hire" id="hire">
+  <div class="hire-text">
+    <h2>Let's Connect</h2>
+    <p>
+      I'm excited about the possibility of collaborating with you. Whether you're looking for a dynamic web developer or have questions about my work, I invite you to reach out.
+      You can connect with me via gmail: 
+      <span id="email" onclick="copyText('email')" style="cursor:pointer; color:#992727; font-weight:bold;">
+        yanyanu.cabab@gmail.com
+      </span>
+      <span id="copied-msg" style="display:none; color:green; margin-left:10px;">Copied!</span>
+    </p>
+    <p>
+      Thank you for exploring my portfolio! I look forward to the opportunity to contribute my skills and passion to your team.
+    </p>
+  </div>
+</section>
+
+<script>
+function copyText(elementId) {
+  const text = document.getElementById(elementId).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const msg = document.getElementById("copied-msg");
+    msg.style.display = "inline";
+    setTimeout(() => { msg.style.display = "none"; }, 2000);
+  });
+}
+</script>
+
+</body>
+</html>
