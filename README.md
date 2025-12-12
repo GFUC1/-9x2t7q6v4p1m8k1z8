@@ -1,2 +1,1 @@
-for grades ;-;
-and prolly palce holder for activity portfolio proj links.
+for grades ;-; and prolly palce holder for activity portfolio proj links.
